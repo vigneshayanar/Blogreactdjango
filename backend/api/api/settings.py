@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
+from .DEFAULTS import DEFAULT_HEADERS
 
 from pathlib import Path
 
@@ -59,6 +60,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5174",
     "https://blogreact-ypll.onrender.com",
 ]
+
+CORS_ALLOW_HEADERS = DEFAULT_HEADERS 
 
 CORS_ALLOWED_CREDENTIALS=True
 
