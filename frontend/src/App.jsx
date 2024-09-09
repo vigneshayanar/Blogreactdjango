@@ -22,7 +22,7 @@ import {toast } from 'react-toastify';
 
 function App() {
   const createblog=(data)=>{
-    axios.post("http://127.0.0.1:8000/blog/",data)
+    axios.post("https://blogreactdjango-3.onrender.com/blog/",data)
     .then(res=> {console.log(data)
         toast.success("Blog added successfully")
     })
@@ -51,7 +51,7 @@ const router=createBrowserRouter(createRoutesFromElements(
   <Route path='*' errorElement={<Notfound/>}>
   </Route>
   </>
-));
+  ));
   return (
     <RouterProvider router={router}/>
   )

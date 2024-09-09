@@ -6,7 +6,7 @@ const Blogcontent = () => {
   const [blog,setblog]=useState([])
   const[loading,srtloading]=useState(true)
   useEffect(()=>{
-    axios.get('http://127.0.0.1:8000/blog/recent')
+    axios.get('https://blogreactdjango-3.onrender.com/blog/recent')
     .then(res=> {console.log(res.data)
       setblog(res.data)})
       srtloading(false)

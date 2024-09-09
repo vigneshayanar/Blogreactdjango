@@ -14,7 +14,7 @@ const Editblogpage = ({editblog}) => {
     content:content
   }
   useEffect(()=>{
-    axios.get(`http://127.0.0.1:8000/blog/${slug}`)
+    axios.get(`https://blogreactdjango-3.onrender.com/blog/${slug}`)
     .then(res=> {console.log(res.data)
       setdata(res.data)
       setitle(res.data.title)
@@ -24,7 +24,7 @@ const Editblogpage = ({editblog}) => {
   const handle=(e)=>{
     e.preventDefault();
     console.log(updatedblog)
-    axios.put(`http://127.0.0.1:8000/blog/${slug}/`,updatedblog)
+    axios.put(`https://blogreactdjango-3.onrender.com/blog/${slug}/`,updatedblog)
     .then(res=>{
       console.log(res.data)
       editblog(res.data)

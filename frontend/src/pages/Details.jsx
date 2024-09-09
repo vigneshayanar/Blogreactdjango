@@ -11,14 +11,14 @@ const Details = ({del}) => {
   const{slug}=useParams()
   const [blog,setblog]=useState({})
   useEffect(()=>{
-    axios.get(`http://127.0.0.1:8000/blog/${slug}`)
+    axios.get(`https://blogreactdjango-3.onrender.com/blog/${slug}`)
     .then(res=>{
       console.log(res.data)
       setblog(res.data)
     })
   },[])
   const ondelete=()=>{
-    axios.delete(`http://127.0.0.1:8000/blog/${slug}`)
+    axios.delete(`https://blogreactdjango-3.onrender.com/blog/${slug}`)
     .then(res=>{
       console.log(res.data)
       del()
