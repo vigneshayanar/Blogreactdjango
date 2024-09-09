@@ -6,7 +6,16 @@ const Blogcontent = () => {
   const [blog,setblog]=useState([])
   const[loading,srtloading]=useState(true)
   useEffect(()=>{
-    axios.get('https://blogreactdjango-3.onrender.com/blog/recent')
+    const option={
+      url: "https://blogreactdjango-3.onrender.com/blog/recent",
+      method: "GET",
+      headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json; charset=UTF-8'
+            },
+      };
+    
+    axios(option)
     .then(res=> {console.log(res.data)
       setblog(res.data)})
       srtloading(false)
