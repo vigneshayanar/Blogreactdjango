@@ -61,6 +61,9 @@ CORS_ALLOWED_ORIGINS=[
 ]
 ROOT_URLCONF = 'api.urls'
 
+ALLOWED_HOSTS=[
+    "blogreactdjango-3.onrender.com","127.0.0.1","localhost"
+]
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
