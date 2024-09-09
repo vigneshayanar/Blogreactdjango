@@ -60,7 +60,7 @@ CORS_ALLOWED_ORIGINS = [
     "https://blogreact-ypll.onrender.com",
 ]
 
-CORS_ORIGIN_ALLOW_ALL=True
+CORS_ALLOWED_CREDENTIALS=True
 
 ROOT_URLCONF = 'api.urls'
 
