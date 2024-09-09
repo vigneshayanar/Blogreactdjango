@@ -58,7 +58,6 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://localhost:5174",
     "https://blogreact-ypll.onrender.com",
-    "https://blogreactdjango-3.onrender.com/blog/recent"
 ]
 
 ROOT_URLCONF = 'api.urls'
